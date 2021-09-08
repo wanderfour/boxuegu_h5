@@ -60,7 +60,11 @@ app.use(express.static('foldername'))
 - 将代码提交到本地Git仓库
   - 初始化项目 git init
   - 添加.gitignore文件，忽略第三方模块
+  - 提交到暂存区
+  - 提交到本地git仓库
 - 将代码提交到远程Github仓库
+  - 创建远程仓库
+  - 提交代码到远程仓库
 
 
 
