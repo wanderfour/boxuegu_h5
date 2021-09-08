@@ -1,0 +1,138 @@
+// 设置通用样式
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+dialog,
+div,
+dl,
+dt,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+input,
+legend,
+li,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+// 设置pc端html尺寸
+html {
+    font-size: 50px;
+}
+
+// 设置常见的屏幕尺寸，修改里面的html文字大小
+// 划分15等份
+@no: 15;
+
+// 320px
+@media screen and (min-width: 320px) {
+    html {
+        font-size: (320px / @no);
+    }
+}
+// 360px
+@media screen and (min-width: 360px) {
+    html {
+        font-size: (360px / @no);
+    }
+}
+// 375px iphone6/7/8
+@media screen and (min-width: 375px) {
+    html {
+        font-size: (375px / @no);
+    }
+}
+// 384px
+@media screen and (min-width: 384px) {
+    html {
+        font-size: (384px / @no);
+    }
+}
+// 400px
+@media screen and (min-width: 400px) {
+    html {
+        font-size: (400px / @no);
+    }
+}
+// 414px
+@media screen and (min-width: 414px) {
+    html {
+        font-size: (414px / @no);
+    }
+}
+// 424px
+@media screen and (min-width: 424px) {
+    html {
+        font-size: (424px / @no);
+    }
+}
+// 480px
+@media screen and (min-width: 480px) {
+    html {
+        font-size: (480px / @no);
+    }
+}
+// 540px
+@media screen and (min-width: 540px) {
+    html {
+        font-size: (540px / @no);
+    }
+}
+// 720px
+@media screen and (min-width: 720px) {
+    html {
+        font-size: (720px / @no);
+    }
+}
+// 750px
+@media screen and (min-width: 750px) {
+    html {
+        font-size: (750px / @no);
+    }
+}
+
+// 导入字体图标
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?c3a300');
+    src:  url('../fonts/icomoon.eot?c3a300#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?c3a300') format('truetype'),
+      url('../fonts/icomoon.woff?c3a300') format('woff'),
+      url('../fonts/icomoon.svg?c3a300#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }

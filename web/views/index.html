@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博学谷</title>
+    <link rel="stylesheet" href="./lib/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <!-- 顶部搜索 -->
+    <div class="search-content">
+        <!-- 消息中心 -->
+        <a href="#" class="message"></a>
+        <!-- logo -->
+        <div class="logo">
+            <img src="./images/headerLogo.png" alt="">
+        </div>
+        <!-- search -->
+        <a href="#" class="search"></a>
+    </div>
+    <!-- banner -->
+    <div class="banner-content">
+        <div class="banner">
+            <a href="#">
+                <img src="./images/FE.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- 导航模块 -->
+    <div class="nav-content">
+        <div class="nav-hd">·&nbsp;&nbsp;就业课&nbsp;&nbsp;·</div>
+        <div class="nav-bd">
+            <ul>
+                <li><a href="./category.html"><img src="./images/fe-list.png" alt=""></a></li>
+                <li><a href="./category.html"><img src="./images/java.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/python.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/ui.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/data.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/fe-list.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 微课 -->
+    <div class="micro-class-con">
+        <div class="micro-class-hd">·&nbsp;&nbsp;微课&nbsp;&nbsp;·</div>
+        <div class="micro-class-bd">
+            <ul id="class-list">
+            </ul>
+        </div>
+    </div>
+    <!-- 底部占位 -->
+    <div class="space"></div>
+    <!-- 底部Tab栏 -->
+    <div class="bottom-tab">
+        <a class="tab-item" href="./index.html">
+            <div class="tab-item-ico home-ico"></div>
+            <div class="tab-item-label">首页</div>
+        </a>
+        <a class="tab-item" href="./category.html">
+            <div class="tab-item-ico category-ico"></div>
+            <div class="tab-item-label">分类</div>
+        </a>
+    </div>
+    <!-- 定义微课列表模板引擎 -->
+    <script type="text/html" id="tpl-micro">
+        {{each data}}
+        <li><a href="#">
+            <div class="class-img">
+                <img src="{{$value.img}}" alt="">
+            </div>
+            <div class="intro">
+                <h3 class="title">{{$value.name}}</h3>
+                <p>{{$value.count}}人学习<span class="price">{{if $value.price==='免费'}} <span>{{$value.price}}</span> {{else}} <span>￥{{$value.price}}</span> {{/if}}</span></p>
+            </div>
+        </a></li>
+        {{/each}}
+    </script>
+    <!-- 导入js文件 -->
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

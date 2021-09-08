@@ -1,0 +1,252 @@
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+dialog,
+div,
+dl,
+dt,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+input,
+legend,
+li,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?c3a300');
+  src: url('../fonts/icomoon.eot?c3a300#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?c3a300') format('truetype'), url('../fonts/icomoon.woff?c3a300') format('woff'), url('../fonts/icomoon.svg?c3a300#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #f1f1f1;
+}
+.logo-content {
+  display: flex;
+  width: 100%;
+  height: 2.64rem;
+  line-height: 2.64rem;
+  background-color: #fff;
+}
+.logo-content .logo {
+  height: 2.64rem;
+  padding-left: 0.24rem;
+}
+.logo-content .logo img {
+  height: 1.44rem;
+  vertical-align: -8px;
+}
+.logo-content .logo-hd {
+  flex: 1;
+  text-align: center;
+}
+.logo-content .logo-hd h2 {
+  font-size: 1.04rem;
+  letter-spacing: 0.52rem;
+  color: #28abfc;
+}
+.cate-content {
+  display: flex;
+  overflow: hidden;
+  min-height: 25.6rem;
+  margin-top: 0.64rem;
+  font-size: 0.56rem;
+}
+.cate-content .cate-left {
+  float: left;
+  width: 3.68rem;
+}
+.cate-content .cate-left li {
+  height: 2.24rem;
+  line-height: 2.24rem;
+  text-align: center;
+  font-size: 0.64rem;
+}
+.cate-content .cate-left .current {
+  background-color: #fff;
+}
+.cate-content .cate-right {
+  flex: 1;
+  float: right;
+  padding-left: 0.48rem;
+  padding-top: 0.24rem;
+  background-color: #fff;
+}
+.cate-content .cate-right .label-item {
+  display: none;
+}
+.cate-content .cate-right .show {
+  display: block;
+}
+.cate-content .cate-right .item-hd {
+  height: 1.76rem;
+  line-height: 1.76rem;
+  font-size: 0.72rem;
+  color: #28abfc;
+}
+.cate-content .cate-right .job-bd {
+  position: relative;
+}
+.cate-content .cate-right .job-bd p {
+  position: absolute;
+  top: 50%;
+  left: 1.76rem;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  color: #fff;
+}
+.cate-content .cate-right .promote-con .item-hd {
+  font-weight: 700;
+  margin-bottom: 0.24rem;
+}
+.cate-content .cate-right .promote-con .promote-bd li {
+  float: left;
+  margin: 0 0.4rem 0.8rem 0;
+}
+.cate-content .cate-right .promote-con .promote-bd li a {
+  display: inline-block;
+  height: 1.44rem;
+  line-height: 1.36rem;
+  padding: 0 0.64rem;
+  border: 1px solid #ccc;
+  color: #c0c0c0;
+  border-radius: 0.16rem;
+}
+.space {
+  width: 100%;
+  height: 3.12rem;
+}
+.bottom-tab {
+  width: 100%;
+  height: 2.32rem;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+.bottom-tab .tab-item {
+  padding-top: 0.08rem;
+  position: relative;
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  color: #5bb5f5;
+  font-size: 0.48rem;
+}
+.bottom-tab .tab-item .home-ico::before {
+  content: '\e900';
+  font-family: 'icomoon';
+  color: #5bb5f5;
+  font-size: 0.88rem;
+}
+.bottom-tab .tab-item .category-ico::before {
+  content: '\e9ba';
+  font-family: 'icomoon';
+  color: #5bb5f5;
+  font-size: 0.88rem;
+}
+.bottom-tab .tab-item .tab-item-label {
+  position: absolute;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

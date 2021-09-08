@@ -1,0 +1,214 @@
+// 导入common.less
+@import url(./common.less);
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    height: 2000px;
+    background-color: #f1f1f1;
+}
+
+// 设计稿尺寸 375px/15=25px
+@baseFont: 25;
+
+// search-content
+.search-content {
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    width: 15rem;
+    height: (64rem / @baseFont);
+    background-color: #446adf;
+
+    .logo {
+        flex: 1;
+        height: (64rem / @baseFont);
+        padding-top: (14rem / @baseFont);
+        text-align: center;
+    }
+
+    .message {
+        width: (64rem / @baseFont);
+        height: (64rem / @baseFont);
+        background: url(../images/email.png) no-repeat center;
+        background-size: (36rem / @baseFont);
+    }
+
+    .search {
+        width: (64rem / @baseFont);
+        height: (64rem / @baseFont);
+        background: url(../images/search.png) no-repeat center;
+        background-size: (36rem / @baseFont);
+    }
+}
+
+// banner
+.banner-content {
+    position: relative;
+    width: 15rem;
+    height: (234rem / @baseFont);
+
+    .banner {
+        width: 15rem;
+        height: (170rem / @baseFont);
+        position: absolute;
+        bottom: 0;
+
+        img {
+            width: 15rem;
+            height: (170rem / @baseFont);
+        }
+    }
+}
+
+// 导航模块
+.nav-content {
+    width: 15rem;
+    height: (242rem / @baseFont);
+    margin-top: (16rem / @baseFont);
+    background-color: #fff;
+
+    .nav-hd {
+        width: 15rem;
+        height: (38rem / @baseFont);
+        padding-top: (10rem / @baseFont);
+        text-align: center;
+        font-size: 18px;
+        color: #446adf;
+    }
+
+    .nav-bd {
+        li {
+            float: left;
+            width: (125rem / @baseFont);
+            height: (70rem / @baseFont);
+            margin: 16px 0;
+            text-align: center;
+            // 设置font-size去除a标签的默认高度
+            font-size: 0;
+
+            img {
+                width: (70rem / @baseFont);
+                height: (70rem / @baseFont);
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+// micro-class
+.micro-class-con {
+    overflow: hidden;
+    margin-top: (16rem / @baseFont);
+    background-color: #fff;
+
+    .micro-class-hd {
+        width: 15rem;
+        height: (54rem / @baseFont);
+        padding-top: (16rem / @baseFont);
+        text-align: center;
+        font-size: 18px;
+        color: #446adf;
+    }
+
+    .micro-class-bd {
+        padding: 0 (6rem / @baseFont);
+        li {
+            float: left;
+            margin-bottom: (10rem / @baseFont);
+
+            &:nth-child(2n+1) {
+                margin-right: (8rem / @baseFont);
+            }
+
+            .class-img {
+                font-size: 0;
+
+                img {
+                    width: (177rem / @baseFont);
+                    height: (100rem / @baseFont);
+                    vertical-align: bottom;
+                }
+            }
+
+            .intro {
+                height: (58rem / @baseFont);
+
+                h3 {
+                    width: (177rem / @baseFont);
+                    font-size: (16rem / @baseFont);
+                    color: #333;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                p {
+                    position: relative;
+                    padding: (6rem / @baseFont) (4em / @baseFont);
+                    font-size: 14px;
+                    color: #999;
+
+                    .price {
+                        position: absolute;
+                        right: 0;
+                        color: #446adf;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.space {
+    width: 100%;
+    height: (78rem / @baseFont);
+
+}
+
+// bottom-tab
+.bottom-tab {
+    width: 100%;
+    height: (58rem / @baseFont);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background-color: #fff;
+
+    .tab-item {
+        padding-top: (2rem / @baseFont);
+        position: relative;
+        flex: 1;
+        height: 100%;
+        text-align: center;
+        color: #5bb5f5;
+        font-size: (12rem / @baseFont);
+
+        .home-ico {
+            &::before {
+                content: '\e900';
+                font-family: 'icomoon';
+                color: #5bb5f5;
+                font-size: (22rem / @baseFont);
+            }
+        }
+        .category-ico {
+            &::before {
+                content: '\e9ba';
+                font-family: 'icomoon';
+                color: #5bb5f5;
+                font-size: (22rem / @baseFont);
+            }
+        }
+        .tab-item-label {
+            position: absolute;
+            top: (30rem / @baseFont);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
