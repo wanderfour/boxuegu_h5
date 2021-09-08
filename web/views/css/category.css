@@ -215,7 +215,7 @@ body {
   height: 3.12rem;
 }
 .bottom-tab {
-  width: 100%;
+  width: 15rem;
   height: 2.32rem;
   display: flex;
   position: fixed;
